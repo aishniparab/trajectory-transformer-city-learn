@@ -3,7 +3,7 @@ __pycache__/
 *.egg-info
 .DS_Store
 bin/
-
+ttcl/
 logs/*
 data/*
 slurm/config.sh

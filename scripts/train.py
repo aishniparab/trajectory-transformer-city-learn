@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/Users/aishniparab/Documents/coursework/winter_2022_coursework/cs269_deep_gen_models/project/trajectory-transformer-city-learn')
+
 import os
 import numpy as np
 import torch
@@ -24,8 +27,10 @@ args = Parser().parse_args('train')
 
 env = datasets.load_environment(args.dataset)
 
-sequence_length = args.subsampled_sequence_length * args.step
+sequence_length = 10*1 #args.subsampled_sequence_length * args.step
 
+print("env: ", env, type(env))
+"""
 dataset_config = utils.Config(
     datasets.DiscretizedDataset,
     savepath=(args.savepath, 'data_config.pkl'),
@@ -120,3 +125,4 @@ for epoch in range(n_epochs):
     ## save state to disk
     state = model.state_dict()
     torch.save(state, statepath)
+"""

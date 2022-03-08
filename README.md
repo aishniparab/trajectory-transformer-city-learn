@@ -1,5 +1,13 @@
 # Applying Trajectory Transformer to City Learn
 
+## Installation Notes
+- installed according to environment.yml
+- made sure .mujoco/ had mujoco
+- pip install mujoco-py
+- pip install scikit-video
+- pip install scikit-image
+- pip install git+https://github.com/rail-berkeley/d4rl@master#egg=d4rl
+
 (Trajectory Transformer README below)
 
 Code release for [Offline Reinforcement Learning as One Big Sequence Modeling Problem](https://arxiv.org/abs/2106.02039).
