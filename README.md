@@ -1,4 +1,6 @@
-# Trajectory Transformer
+# Applying Trajectory Transformer to City Learn
+
+(Trajectory Transformer README below)
 
 Code release for [Offline Reinforcement Learning as One Big Sequence Modeling Problem](https://arxiv.org/abs/2106.02039).
 
