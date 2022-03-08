@@ -27,10 +27,8 @@ args = Parser().parse_args('train')
 
 env = datasets.load_environment(args.dataset)
 
-sequence_length = 10*1 #args.subsampled_sequence_length * args.step
+sequence_length = args.subsampled_sequence_length * args.step
 
-print("env: ", env, type(env))
-"""
 dataset_config = utils.Config(
     datasets.DiscretizedDataset,
     savepath=(args.savepath, 'data_config.pkl'),
@@ -125,4 +123,3 @@ for epoch in range(n_epochs):
     ## save state to disk
     state = model.state_dict()
     torch.save(state, statepath)
-"""
